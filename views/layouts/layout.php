@@ -13,7 +13,7 @@
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="?module=user&action=create">Créer un utilisateur</a></li>
-            <li><a href="?module=article&action=list">Liste des articles</a></li>
+            <li><a href="?module=article&action=index">Liste des articles</a></li>
             <?php 
                 if (isset($_SESSION['id'])) {
             ?>

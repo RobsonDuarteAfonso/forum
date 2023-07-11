@@ -26,7 +26,7 @@
 
             if ($check) {
 
-                header("Location: ?module=article&action=list");
+                header("Location: ?module=article&action=index");
 
             } else {
 

@@ -1,6 +1,6 @@
 <?php
 
-    function article_controller_list() {
+    function article_controller_index() {
 
         require_once(MODEL_DIR.'/access.php');
         $authenticated = access_model_check_session();
@@ -43,7 +43,7 @@
 
             if (empty($request['id'])) {
 
-                header("Location: ?module=article&action=list&error=3");
+                header("Location: ?module=article&action=index&error=3");
 
             } else {
 
@@ -74,7 +74,7 @@
 
                 require_once(MODEL_DIR.'/article.php');
                 article_model_store($request);
-                header("Location: ?module=article&action=list");
+                header("Location: ?module=article&action=index");
             }
 
         } else {
@@ -99,7 +99,7 @@
 
                 require_once(MODEL_DIR.'/article.php');
                 article_model_edit($request);
-                header("Location: ?module=article&action=list");
+                header("Location: ?module=article&action=index");
             }
 
         } else {
@@ -117,13 +117,13 @@
 
             if (empty($request['id'])) {
 
-                header("Location: ?module=article&action=list&error=3");
+                header("Location: ?module=article&action=index&error=3");
 
             } else {
 
                 require_once(MODEL_DIR.'/article.php');
                 article_model_delete($request);
-                header("Location: ?module=article&action=list");
+                header("Location: ?module=article&action=index");
             }
 
         } else {
