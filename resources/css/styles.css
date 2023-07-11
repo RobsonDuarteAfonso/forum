@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__sub {
+    color: #b6c8f8;
+    background-color: #275ffa;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+main h1 {
+    font-size: 20px;
+}
+
+nav {
+    background-color: rgb(189, 137, 241);
+    height: 60px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: rgb(89, 3, 170);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+main > header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    border-bottom: 1px solid #6a00ff;
+}
+
+main > section {
+    margin-top: 20px;
+}
+
+main > section > article {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+main > section > article small {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #6a00ff;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #f9e0e0;
+    color: #ff0000;
+}
+
+.msg-void {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+main {
+    padding: 0 50px 0 50px;
+}
+
+main > form  {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+}
+
+form label {
+    padding: 10px 0 10px 0;
+}
+
+form input[type=submit] {
+    max-width: 130px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+
+.button-green, 
+.button-orange,
+.button-blue,
+.button-red {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 0;
+    text-decoration: none;
+}
+
+.button-green {
+    color: white;
+    background-color: green;
+}
+
+.button-green:hover {
+    background-color: #01b401;
+}
+
+.button-orange {
+    color: white;
+    background-color: #ff8800;
+}
+
+.button-orange:hover {
+    background-color: orange;
+}
+
+.button-blue {
+    color: white;
+    background-color: #0044ff;
+}
+
+.button-blue:hover {
+    background-color: #275ffa;
+}
+
+.button-red {
+    color: white;
+    background-color: #ff0000;
+}
+
+.button-red:hover {
+    background-color: #f33a3a;
+}
+
+
+.table-void td {
+    text-align: center;
+    height: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+/*     border: 1px solid red; */
+    height: 40px;
+}
+
+.link {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    font-size: 11px;
+}
+
+.col1 {
+    width: 20%;
+}
+
+.col2 {
+    width: 35%;
+}
+
+.col3 {
+    width: 20%;
+    text-align: center;
+}
+
+.col4 {
+    width: 10%;
+    text-align: center;
+} 
+
+.col5 {
+    width: 15%;
+}
+
+.col5 > div {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
