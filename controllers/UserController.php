@@ -12,6 +12,9 @@
 
         } else {
 
+            require_once(MODEL_DIR.'/access.php');
+            access_model_logout();
+
             require_once(MODEL_DIR.'/user.php');
             user_model_store($request);
             header("Location: ?module=access&action=login");
